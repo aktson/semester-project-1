@@ -181,14 +181,14 @@ nav ul {
   grid-template-columns: repeat(2, 1fr);
   padding: 20px 10px;
   margin: 0 auto;
-  gap: 30px;
+  gap: 10px;
 }
 .three-col-grid {
   max-width: 1000px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 20px 10px;
-  gap: 30px;
+  gap: 10px;
   margin: 0 auto;
 }
 
