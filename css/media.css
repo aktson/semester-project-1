@@ -19,8 +19,9 @@
 
   header {
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: auto;
     align-items: flex-start;
+    justify-content: center;
   }
   /*global heading */
 
