@@ -24,7 +24,9 @@
     justify-content: center;
   }
   /*global heading */
-
+  .heading figure img {
+    width: 150%;
+  }
   .heading h1 {
     font-size: 1.6em;
   }
@@ -62,6 +64,7 @@
     flex-wrap: wrap;
     flex-direction: column;
   }
+
   /*global grid */
   .three-col-grid {
     grid-template-columns: auto auto;
