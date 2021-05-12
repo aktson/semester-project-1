@@ -1,0 +1,15 @@
+.explore-kids {
+  background-color: var(--darkblue);
+  color: white;
+}
+.explore-kids-content {
+  max-width: 500px;
+  margin: 0px auto 30px;
+  padding: 20px 10px;
+}
+.parallax-explore {
+  background: url(../images/explore/explore-kids-parallax.jpg) no-repeat top right;
+  background-size: cover;
+  height: 70vh;
+  background-attachment: fixed;
+}

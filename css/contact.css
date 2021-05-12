@@ -1,0 +1,44 @@
+.form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 40px;
+  font-family: "mulish", Georgia, "Times New Roman", Times, serif;
+  background-color: var(--blue);
+  color: white;
+  border-radius: 8px;
+  align-content: center;
+}
+label {
+  display: inline-block;
+  padding: 10px 0px;
+}
+.input {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+}
+.placeholder {
+  width: 100%;
+  height: 100px;
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+}
+.form h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.input-half {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.input:nth-of-type(1) {
+  grid-row: 2;
+}
+.input-half label {
+  padding: 0;
+}

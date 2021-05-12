@@ -1,0 +1,9 @@
+main img {
+  width: 100%;
+}
+.event-content {
+  margin: 150px auto;
+}
+.event-content .cta {
+  margin-left: 10px;
+}

@@ -3,11 +3,142 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Explore exhibition spaces at Community Science Museum"
-    />
+    <meta name="description" content="Explore exhibition spaces at Community Science Museum" />
     <title>Exhibtion Spaces| Community Science Museum</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/exhibition-spaces.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <img src="images/logo1.png" alt="logo of Community science Museum" id="logo" />
+      <label for="hamburger-menu" id="checkbox" class="hamburger">
+        <i class="fas fa-bars"></i>
+      </label>
+      <input type="checkbox" name="checkbox" id="hamburger-menu" />
+
+      <nav>
+        <ul>
+          <li><a class="navbar" href="index.html">Home</a></li>
+          <li><a class="navbar" href="get-involved.html">get involved</a></li>
+          <li>
+            <a class="navbar" href="explore.html" class="dropdown">explore</a>
+          </li>
+          <li>
+            <a class="navbar active" href="exhibition-spaces.html">exhibition spaces</a>
+          </li>
+          <li><a class="navbar" href="visit.html">visit us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="heading">
+        <figure class="heading-img">
+          <img src="images/event-spaces/evt-space-heading.jpg" alt="Victoria and Albert Museum, London dinosaur skull" />
+        </figure>
+        <div class="heading-text">
+          <h1>let's explore together</h1>
+          <p>Come join us at the Community Science Museum where we’re committed to making science accessible to all.</p>
+        </div>
+      </section>
+      <section class="bio-medicine two-col-grid">
+        <img src="images/event-spaces/biology-&-medicine.png" alt="model of inner organs" />
+        <div>
+          <h2>Biology and Medicine</h2>
+          <p>
+            From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny
+            world. For many people their life expectancy is much longer and their quality of life much improved, thanks to the growth of our
+            understanding of medicine.
+          </p>
+          <p>
+            Over a series of exhibits we explore the history of medicine and take a look at some major breakthroughs including the discovery of
+            penicillin and the first heart transplant. Many of our great medicinal discoveries have come not only from the lab, but also from
+            observing animals in the wild. Often our fellow creatures have beat us to it.
+          </p>
+        </div>
+      </section>
+
+      <section class="eco-robo two-col-grid">
+        <div class="ecology">
+          <div class="robotics-text">
+            <h2>Ecology</h2>
+            <p>
+              As we learn more and more of the impact humans are having on the planet, the more important it becomes that scientists explore how to
+              create a sustainable future not just for humans but for the whole planet.
+            </p>
+            <p></p>
+          </div>
+          <img src="images/event-spaces/ecology.png" alt="autumn forest" />
+        </div>
+        <div class="robotics">
+          <div class="robotics-text">
+            <h2>Robotics and Al</h2>
+            <p>
+              The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications
+              of AI to industrial uses of robotics, the future is here. You can even say hello and shake the hand of Rob the Robot.
+            </p>
+          </div>
+          <img src="images/event-spaces/robotics-&-al.png" alt="child wearing VR glasses" />
+        </div>
+      </section>
+
+      <section class="cosmology">
+        <div class="cosmo-text two-col-grid">
+          <div>
+            <h2>Cosmology</h2>
+            <p>
+              Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the night sky and what we can see and know
+              about the universe around us. We’ll locate the various constellations and galaxies that can be seen and learn a bit about the early
+              navigators who used the stars to travel by.
+            </p>
+            <p>
+              Follow the journey of our solar exploration: from early Arab traders, to Galileo’s telescope, to the latest exploration of the planets
+              in our solar system.
+            </p>
+          </div>
+          <img src="images/event-spaces/cosmology.png" alt="astronomical events of moon cycle" />
+        </div>
+      </section>
+      <section class="evolution">
+        <div class="evolution-text">
+          <h2>Evolution</h2>
+          <p>
+            For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we come from and how did we get here?
+            Since Darwin proposed his theory of evolution we have had a framework for exploring and understanding our place in this world.
+          </p>
+          <p>
+            Discover the origins of life on this planet and how the species we know today have evolved our time. You can also take some time to meet a
+            few of the creatures who didn’t survive, including our Woolly Mammoth, the Dodos, and a number of dinosaurs too
+          </p>
+        </div>
+      </section>
+      <section class="parallax">
+        <p>Stay updated</p>
+        <div>
+          <input type="text" type="email" placeholder=" e-mail address" />
+          <input type="submit" class="cta" value="Subscribe" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div>
+          <p>Follow us on</p>
+          <i class="fab fa-facebook-square icons"></i>
+          <i class="fab fa-instagram size icons"></i>
+          <i class="fab fa-youtube-square icons"></i>
+        </div>
+        <div>
+          <a href="contact.html" class="cta">Contact us</a>
+        </div>
+        <div class="copy-right">&copy; NoPra 2021 designed & developed by ANKSON</div>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,35 @@
+.bio-medicine,
+.eco-robo,
+.cosmology {
+  margin: 150px auto;
+}
+.cosmology {
+  background-color: var(--gray);
+  padding: 20px;
+}
+.eco-robo h2 {
+  padding: 20px;
+}
+.robotics,
+.ecology {
+  background-color: var(--darkblue);
+}
+.ecology p,
+.robotics p {
+  color: white;
+}
+
+.evolution-text {
+  max-width: 500px;
+  margin: 0 auto;
+  color: white;
+}
+.evolution {
+  background: url(../images/event-spaces/evolution.jpg) center no-repeat;
+  display: grid;
+  align-items: center;
+  background-size: cover;
+  height: 70vh;
+  background-blend-mode: saturation;
+  background-color: rgba(0, 0, 0, 0.3);
+}
