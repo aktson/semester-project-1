@@ -73,7 +73,11 @@ h2 {
   border-bottom: 2px solid var(--light-blue);
   font-size: 1.8em;
 }
-
+h3 {
+  font-size: 1.3em;
+  text-decoration: underline;
+  color: var(--blue);
+}
 p {
   font-family: "mulish", Georgia, "Times New Roman", Times, serif;
   font-size: 1.1em;
@@ -155,6 +159,8 @@ nav ul {
 /*global heading */
 .heading {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   padding: 50px;
   height: 70vh;
 
@@ -162,12 +168,6 @@ nav ul {
 }
 .heading-content {
   max-width: 500px;
-  /*justify-content: center;
-  position: absolute;
-  top: 50px;
-  left: 50px;*/
-  display: flex;
-  flex-direction: column;
 }
 
 .heading p {
@@ -207,7 +207,7 @@ nav ul {
   font-weight: bold;
 }
 .cta:hover {
-  transform: scalex(1.1);
+  transform: scalex(1.1) translateY(5px);
   transition: transform 1s;
 }
 /* global parallax section */

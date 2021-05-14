@@ -4,29 +4,6 @@
   background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: overlay;
 }
-
-.location-info h2 {
-  grid-column: 1/-1;
-  text-align: center;
-}
-main img {
-  max-width: 100%;
-}
-
-.other-info > div,
-.timing-info > div {
-  background-color: var(--gray);
-  /* color: white;*/
-  padding: 20px;
-  align-items: normal;
-  line-height: 2em;
-}
-.timing-info {
-  align-items: normal;
-}
-.other-info {
-  margin-bottom: 20px;
-}
 .location-info div {
   font-weight: bold;
   line-height: 2em;
@@ -35,6 +12,25 @@ main img {
   grid-template-columns: auto auto;
   align-items: normal;
 }
+.location-info h2 {
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.other-info > div,
+.timing-info > div {
+  background-color: var(--gray);
+  padding: 20px;
+  align-items: normal;
+}
+.timing-info {
+  align-items: normal;
+}
+.other-info {
+  margin-bottom: 20px;
+}
+
 main .fas {
   font-size: 2em;
+  color: var(--yellow);
 }
