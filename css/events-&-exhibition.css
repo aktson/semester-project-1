@@ -1,3 +1,10 @@
+.heading {
+  background: url(../images/event-&-exhibit/evt.&exh.-heading.jpg) center no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+}
+
 main img {
   width: 100%;
 }

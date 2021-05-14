@@ -1,5 +1,10 @@
 /*heading slider homepage */
-
+.heading {
+  background: url(../images/event-spaces/evt-space-heading.jpg) center no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+}
 .about,
 .explore,
 .involve-home,
@@ -45,7 +50,7 @@ figcaption {
 .explore .fas {
   font-size: 5em;
   padding: 20px;
-  color: var(--heading-lightblue);
+  color: var(--yellow);
 }
 .overlay {
   position: relative;
@@ -81,7 +86,7 @@ figcaption {
 }
 .involve-home img {
   padding: 20px;
-  max-width: 50%;
+  max-width: 40%;
 }
 
 /*news section */

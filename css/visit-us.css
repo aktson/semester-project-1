@@ -1,3 +1,10 @@
+.heading {
+  background: url(../images/visit/visit-heading.jpg) center no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+}
+
 .location-info h2 {
   grid-column: 1/-1;
   text-align: center;
@@ -8,8 +15,8 @@ main img {
 
 .other-info > div,
 .timing-info > div {
-  background-color: var(--darkblue);
-  color: white;
+  background-color: var(--gray);
+  /* color: white;*/
   padding: 20px;
   align-items: normal;
   line-height: 2em;
@@ -28,6 +35,6 @@ main img {
   grid-template-columns: auto auto;
   align-items: normal;
 }
-.fas {
+main .fas {
   font-size: 2em;
 }

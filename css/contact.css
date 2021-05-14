@@ -1,3 +1,10 @@
+.heading {
+  background: url(../images/contact/contact-heading.jpg) center no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+}
+
 .form {
   max-width: 500px;
   margin: 20px auto;

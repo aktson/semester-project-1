@@ -4,8 +4,8 @@
 :root {
   --darkblue: #2b3d48;
   --blue: #364c59;
-  --heading-lightblue: #00d3ff;
-  --subheading-link-yellow: #fbcf0e;
+  --yellow: #fbcf0e;
+  --light-blue: #008fac;
   --gray: #f2f2f2;
 }
 /*fonts */
@@ -61,16 +61,16 @@ h4 {
 }
 
 h1 {
-  color: var(--heading-lightblue);
-  font-size: 2em;
+  color: var(--yellow);
+  font-size: 3em;
   font-weight: bold;
 }
 
 h2 {
-  color: var(--subheading-link-yellow);
+  color: var(--light-blue);
   text-align: left;
   padding: 0 10px 10px;
-  border-bottom: 2px solid var(--subheading-link-yellow);
+  border-bottom: 2px solid var(--light-blue);
   font-size: 1.8em;
 }
 
@@ -132,7 +132,7 @@ nav ul {
 .navbar::before {
   content: "";
   width: 90%;
-  background-color: var(--heading-lightblue);
+  background-color: var(--yellow);
   padding: 6px;
   position: absolute;
   left: 0px;
@@ -148,30 +148,33 @@ nav ul {
   transform-origin: left;
 }
 .active {
-  border-bottom: 13px solid var(--heading-lightblue);
+  border-bottom: 13px solid var(--yellow);
   cursor: default;
 }
 
 /*global heading */
 .heading {
-  position: relative;
+  display: flex;
+  padding: 50px;
+  height: 70vh;
+
+  /*position: relative;*/
 }
-.heading h1 {
-  font-size: 3em;
-  margin: 10 0px;
+.heading-content {
+  max-width: 500px;
+  /*justify-content: center;
+  position: absolute;
+  top: 50px;
+  left: 50px;*/
+  display: flex;
+  flex-direction: column;
 }
+
 .heading p {
   font-size: 1.2em;
   line-height: 1.5em;
   color: white;
   padding: 0;
-}
-.heading-text {
-  max-width: 500px;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  padding: 10px;
 }
 
 /*global two and three column grid */
@@ -194,7 +197,7 @@ nav ul {
 
 /*global call to action */
 .cta {
-  background-color: var(--heading-lightblue);
+  background-color: var(--yellow);
   padding: 12px 4px;
   border: none;
   width: 90px;
@@ -209,8 +212,8 @@ nav ul {
 }
 /* global parallax section */
 .parallax {
-  background: url("../images/home/parallax-home.jpg") center no-repeat;
-  min-height: 50vh;
+  background: url("../images/parallax.jpg") center no-repeat;
+  min-height: 40vh;
   background-size: cover;
   background-attachment: fixed;
   display: flex;

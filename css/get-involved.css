@@ -1,3 +1,10 @@
+.heading {
+  background: url(../images/get-involved/get-involved-heading.jpg) center no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+}
+
 .move-right {
   justify-self: center;
 }
@@ -9,5 +16,5 @@ main h2 {
   align-content: center;
 }
 .get-involve img {
-  width: 80%;
+  max-width: 60%;
 }

@@ -1,3 +1,10 @@
+.heading {
+  background: url(../images/explore/explore-heading.jpg) center no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+}
+
 .explore-kids {
   background-color: var(--darkblue);
   color: white;
@@ -8,8 +15,8 @@
   padding: 20px 10px;
 }
 .parallax-explore {
-  background: url(../images/explore/explore-kids-parallax.jpg) no-repeat top right;
+  background: url(../images/explore/exlore-kids-parallax.jpg) center bottom no-repeat;
   background-size: cover;
-  height: 70vh;
+  height: 50vh;
   background-attachment: fixed;
 }
