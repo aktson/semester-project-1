@@ -102,7 +102,19 @@ header {
   align-items: center;
   position: relative;
   margin-bottom: 2px;
+  transform: translateY(-50px);
+  transition: 1s linear;
+  animation: 2s forwards easing;
 }
+@keyframes easing {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 #logo {
   width: 180px;
 }
@@ -121,6 +133,16 @@ nav ul {
 }
 #hamburger-menu:checked ~ nav {
   display: none;
+  animation: 2s forwards easing-in;
+  transition: 1s linear;
+}
+@keyframes easing-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .hamburger {
   background-color: white;
@@ -254,4 +276,11 @@ footer {
   display: flex;
   flex-direction: row;
   text-align: center;
+  position: relative;
+}
+.to-top {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: var(--yellow);
 }
