@@ -246,7 +246,7 @@ nav ul {
 .parallax p {
   padding: 20px;
   font-size: 2em;
-  color: #2b3d48;
+  color: var(--yellow);
   font-weight: bold;
 }
 .parallax input {
