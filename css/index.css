@@ -1,8 +1,8 @@
 /*heading slider homepage */
 .heading {
-  background: url(../images/event-spaces/evt-space-heading.jpg) center no-repeat;
+  background: url(../images/heart-2607178_1920.jpg) center left no-repeat;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: overlay;
 }
 .about,
@@ -103,6 +103,9 @@ figcaption {
 
 .news-text > a {
   background-color: var(--gray);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 .news-text img {
   width: 100%;
