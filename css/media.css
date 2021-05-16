@@ -23,13 +23,12 @@
     align-items: flex-start;
     justify-content: center;
   }
-  /*global heading */
+  /*global banner */
 
   /* global grid */
   .two-col-grid {
     grid-template-columns: auto;
     justify-content: center;
-    text-align: center;
   }
   .three-col-grid {
     grid-template-columns: auto;
@@ -67,6 +66,7 @@
   /*contact page */
   .form {
     margin: 20px;
+    padding: 20px;
   }
 }
 @media (min-width: 611px) and (max-width: 790px) {

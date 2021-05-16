@@ -79,14 +79,15 @@ h3 {
   color: var(--blue);
 }
 p {
-  font-family: "mulish", Georgia, "Times New Roman", Times, serif;
   font-size: 1.1em;
   line-height: 1.5em;
   padding: 10px;
 }
 
 a,
-figcaption {
+p,
+figcaption,
+input {
   font-family: "mulish", Georgia, "Times New Roman", Times, serif;
 }
 
@@ -178,19 +179,19 @@ nav ul {
   cursor: default;
 }
 
-/*global heading */
-.heading {
+/*global banner */
+.banner {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding: 50px;
   height: 80vh;
 }
-.heading-content {
+.banner-content {
   max-width: 500px;
 }
 
-.heading p {
+.banner p {
   font-size: 1.3em;
   line-height: 1.5em;
   color: white;
@@ -234,7 +235,7 @@ nav ul {
 /* global parallax section */
 .parallax {
   background: url("../images/parallax.jpg") center no-repeat;
-  min-height: 40vh;
+  min-height: 50vh;
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -243,10 +244,13 @@ nav ul {
   justify-content: center;
 }
 .parallax p {
-  padding: 20px;
+  padding: 10px;
   font-size: 2em;
   color: var(--yellow);
   font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  border-radius: 4px;
 }
 .parallax input {
   border: none;
