@@ -157,4 +157,8 @@
   .night-museum {
     grid-row: 1;
   }
+  /*visit us page */
+  .other-info :nth-of-type(3) {
+    grid-column: 1/3;
+  }
 }

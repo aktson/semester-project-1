@@ -1,8 +1,8 @@
 /*banner slider homepage */
 .banner {
-  background: url(../images/heart-2607178_1920.jpg) center left no-repeat;
+  background: url(../images/home/home-heading.jpg) center left no-repeat;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.1);
   background-blend-mode: overlay;
 }
 .about,
