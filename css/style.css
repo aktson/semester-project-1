@@ -244,11 +244,11 @@ nav ul {
   justify-content: center;
 }
 .parallax p {
-  padding: 10px;
-  font-size: 2em;
+  padding: 15px;
+  font-size: 3em;
   color: var(--yellow);
   font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--darkblue);
   margin: 20px;
   border-radius: 4px;
 }
@@ -260,6 +260,7 @@ nav ul {
 }
 .parallax .cta {
   width: 100%;
+  font-size: 1.2em;
 }
 
 /* global footer */

@@ -10,7 +10,6 @@
 }
 .location-info {
   grid-template-columns: auto auto;
-  align-items: normal;
 }
 .location-info h2 {
   grid-column: 1/-1;

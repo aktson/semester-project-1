@@ -12,9 +12,7 @@ main h2 {
   grid-column: 1/-1;
 }
 .get-involve {
+  grid-template-columns: 30% 70%;
   margin: 150px auto;
   align-content: center;
-}
-.get-involve img {
-  max-width: 60%;
 }
