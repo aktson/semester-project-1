@@ -224,7 +224,7 @@ nav ul {
   width: 110px;
   display: inline-block;
   text-align: center;
-  margin: 20px 0px;
+  margin: 20px 10px;
   font-weight: bold;
   border-radius: 4px;
 }
@@ -261,6 +261,7 @@ nav ul {
 .parallax .cta {
   width: 100%;
   font-size: 1.2em;
+  margin-left: 0px;
 }
 
 /* global footer */

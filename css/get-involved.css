@@ -5,9 +5,6 @@
   background-blend-mode: overlay;
 }
 
-.move-right {
-  justify-self: center;
-}
 main h2 {
   grid-column: 1/-1;
 }
