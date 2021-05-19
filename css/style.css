@@ -23,7 +23,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+/* global styling */
 a,
 li {
   color: black;
@@ -189,6 +189,20 @@ nav ul {
 }
 .banner-content {
   max-width: 500px;
+  animation: 1s slide-right forwards;
+  transform: translatex(-150px);
+  opacity: 0;
+  transition: transform 1s;
+}
+@keyframes slide-right {
+  0% {
+    transform: translatex(-150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0px);
+    opacity: 1;
+  }
 }
 
 .banner p {
