@@ -23,7 +23,8 @@ main label {
 .input {
   width: 100%;
   height: 50px;
-  border-radius: 8px;
+  border-radius: 4px;
+  padding: 10px;
   border: none;
   background-color: white;
   box-shadow: 1px 1px 2px black;
@@ -52,4 +53,7 @@ main label {
 }
 .input-half label {
   padding: 0;
+}
+.form .cta {
+  margin-left: 0;
 }

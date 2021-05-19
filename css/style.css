@@ -4,7 +4,7 @@
 :root {
   --darkblue: #2b3d48;
   --blue: #364c59;
-  --yellow: #fbcf0e;
+  --h1-cta-blue: #05e1e1;
   --light-blue: #008fac;
   --gray: #f2f2f2;
 }
@@ -62,7 +62,7 @@ h4 {
 }
 
 h1 {
-  color: var(--yellow);
+  color: var(--h1-cta-blue);
   font-size: 2.5em;
   font-weight: bold;
 }
@@ -160,7 +160,7 @@ nav ul {
 .navbar::before {
   content: "";
   width: 90%;
-  background-color: var(--yellow);
+  background-color: var(--h1-cta-blue);
   padding: 6px;
   position: absolute;
   left: 0px;
@@ -176,7 +176,7 @@ nav ul {
   transform-origin: left;
 }
 .active {
-  border-bottom: 13px solid var(--yellow);
+  border-bottom: 13px solid var(--h1-cta-blue);
   cursor: default;
 }
 
@@ -207,10 +207,10 @@ nav ul {
 }
 
 .banner p {
-  font-size: 1.3em;
-  line-height: 1.5em;
+  font-size: 1.2em;
+  line-height: 1.4em;
   color: white;
-  padding: 0;
+  padding: 10px 0;
 }
 
 /*global two and three column grid */
@@ -235,7 +235,7 @@ nav ul {
 
 /*global call to action */
 .cta {
-  background-color: var(--yellow);
+  background-color: var(--h1-cta-blue);
   padding: 12px 4px;
   border: none;
   width: 110px;
@@ -263,9 +263,9 @@ nav ul {
   -ms-grid-column-align: center;
 }
 .parallax p {
-  padding: 15px;
-  font-size: 2.2em;
-  color: var(--yellow);
+  padding: 10px;
+  font-size: 1.5em;
+  color: var(--h1-cta-blue);
   font-weight: bold;
   background-color: var(--darkblue);
   margin: 20px;
@@ -307,7 +307,7 @@ footer {
   position: absolute;
   top: 20px;
   right: 20px;
-  color: var(--yellow);
+  color: var(--h1-cta-blue);
   transition: transform 0.5s;
 }
 .to-top:hover {

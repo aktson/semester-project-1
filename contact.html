@@ -45,30 +45,31 @@
       <section class="banner">
         <div class="banner-content">
           <h1>let us know</h1>
-          <p>fill in the form below or just give us call.</p>
-          <p>we are at your service......</p>
+          <p>Please fill in the form below or just give us call. We are at your service......</p>
         </div>
       </section>
       <section class="form">
-        <h2>Contact us</h2>
-        <div class="input-half">
-          <label for="first-name">First name</label>
-          <input type="text" name="first-name" class="input" />
-          <label for="last-name">Last name</label>
-          <input type="text" name="last-name" class="input" />
-        </div>
-        <label for="e-mail">E-mail</label>
-        <input type="e-mail" name="e-mail" class="input" />
-        <label for="placeholder">Your message</label>
-        <input type="text" name="placeholder" class="placeholder" />
-        <input type="submit" class="cta" />
+        <form action="contact.php">
+          <h2>Contact us</h2>
+          <div class="input-half">
+            <label for="first-name">First name</label>
+            <input type="text" name="first-name" class="input" required />
+            <label for="last-name">Last name</label>
+            <input type="text" name="last-name" class="input" required />
+          </div>
+          <label for="e-mail">E-mail</label>
+          <input name="e-mail" class="input" required />
+          <label for="placeholder">Your message</label>
+          <input type="text" name="placeholder" class="placeholder" />
+          <input type="submit" class="cta" />
+        </form>
       </section>
       <section class="parallax">
         <p>Stay updated</p>
-        <div>
-          <input type="text" type="email" placeholder=" e-mail address" />
+        <form action="subscribe.php">
+          <input type="email" placeholder=" e-mail address" required />
           <input type="submit" class="cta" value="Subscribe" />
-        </div>
+        </form>
       </section>
     </main>
     <footer>

@@ -1,6 +1,6 @@
 /*banner slider homepage */
 .banner {
-  background: url(../images/home/home-heading.jpg) center left no-repeat;
+  background: url(../images/home/home-heading.jpg) center no-repeat;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.1);
   background-blend-mode: overlay;
@@ -54,7 +54,7 @@ figcaption {
 .explore .fas {
   font-size: 5em;
   padding: 20px;
-  color: var(--yellow);
+  color: var(--h1-cta-blue);
 }
 .overlay {
   position: relative;
