@@ -36,6 +36,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  -ms-grid-rows: auto 1fr auto;
   grid-template-areas:
     "header"
     "main"
@@ -217,6 +218,7 @@ nav ul {
   max-width: 1000px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: repeat(2, 1fr);
   padding: 20px 10px;
   margin: 0 auto;
   gap: 10px;
@@ -225,6 +227,7 @@ nav ul {
   max-width: 1000px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: repeat(3, 1fr);
   padding: 20px 10px;
   gap: 10px;
   margin: 0 auto;
@@ -255,7 +258,9 @@ nav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  -ms-grid-row-align: center;
   justify-content: center;
+  -ms-grid-column-align: center;
 }
 .parallax p {
   padding: 15px;
@@ -292,6 +297,7 @@ footer {
   color: white;
   padding: 20px;
   justify-content: center;
+  -ms-grid-column-align: center;
   display: flex;
   flex-direction: row;
   text-align: center;

@@ -7,9 +7,12 @@
 
 main h2 {
   grid-column: 1/-1;
+  -ms-grid-column: 1/-1;
 }
 .get-involve {
   grid-template-columns: 30% 70%;
+  -ms-grid-columns: 30% 70%;
   margin: 150px auto;
   align-content: center;
+  -ms-grid-row-align: center;
 }

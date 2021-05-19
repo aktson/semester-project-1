@@ -20,21 +20,23 @@
   header {
     display: grid;
     grid-template-columns: auto;
+    -ms-grid-columns: auto;
     align-items: flex-start;
+    -ms-grid-row-align: flex-start;
     justify-content: center;
+    -ms-grid-column-align: center;
   }
   /*global banner */
   .banner {
     height: 50vh;
   }
   /* global grid */
-  .two-col-grid {
-    grid-template-columns: auto;
-    justify-content: center;
-  }
+  .two-col-grid,
   .three-col-grid {
     grid-template-columns: auto;
+    -ms-grid-columns: auto;
     justify-content: center;
+    -ms-grid-column-align: center;
   }
 
   /*home page */
@@ -46,9 +48,11 @@
   }
   .about figure {
     grid-column: 1/3;
+    -ms-grid-column: 1/3;
   }
   .about-text:nth-of-type(1) {
     grid-column: 1/3;
+    -ms-grid-column: 1/3;
   }
   .involve-home img {
     padding: 20px;
@@ -58,6 +62,7 @@
   /* get involve page */
   .get-involve {
     justify-items: center;
+    -ms-grid-column-align: center;
     margin: 0px auto;
     text-align: center;
   }
@@ -74,13 +79,17 @@
   .bio-medicine div,
   .evolution div {
     grid-column: 1/3;
+    -ms-grid-column: 1/3;
   }
   .bio-medicine figure {
     grid-column: 1/3;
+    -ms-grid-column: 1/3;
     grid-row: 2;
+    -ms-grid-row: 2;
   }
   .evolution figure {
     grid-column: 1/3;
+    -ms-grid-column: 1/3;
   }
   /*events & exhibition spaces page */
   .event-content {
@@ -88,6 +97,7 @@
   }
   .night-museum {
     grid-row: 1;
+    -ms-grid-row: 1;
   }
 
   /*contact page */
@@ -102,6 +112,7 @@
   header {
     display: flex;
     align-items: center;
+    -ms-grid-row-align: center;
     text-align: center;
     flex-wrap: wrap;
     flex-direction: column;
@@ -113,7 +124,9 @@
   /*global grid */
   .three-col-grid {
     grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
     justify-content: center;
+    -ms-grid-column-align: center;
   }
 
   /*home page */
@@ -124,13 +137,16 @@
   .overlay:nth-of-type(3),
   .news-text a:last-child {
     grid-column: 1/3;
+    -ms-grid-column: 1/3;
   }
 
   /*get involved page */
   .get-involve {
     grid-template-columns: 30% 70%;
+    -ms-grid-columns: 30% 70%;
     margin: 0 auto;
     align-items: center;
+    -ms-grid-row-align: center;
   }
   .get-involve .cta {
     margin-left: 10px;
@@ -143,6 +159,7 @@
   .explore-teacher,
   .explore-researchers {
     align-items: center;
+    -ms-grid-row-align: center;
   }
 
   /*exhibition-spaces  page */
@@ -153,26 +170,33 @@
   }
   .bio-medicine div {
     grid-column: 1/3;
+    -ms-grid-column: 1/3;
   }
   .bio-medicine figure {
     grid-column: 1/3;
     grid-row: 2;
+    -ms-grid-column: 1/3;
+    -ms-grid-row: 2;
   }
   .cosmo-text {
     align-items: center;
+    -ms-grid-row-align: center;
   }
 
   /*events & exhibition spaces page */
   .event-content {
     margin: 50px auto;
     grid-template-columns: auto;
+    -ms-grid-columns: auto;
   }
   .night-museum {
     grid-row: 1;
+    -ms-grid-row: 2;
   }
 
   /*visit us page */
   .other-info :nth-of-type(3) {
     grid-column: 1/3;
+    -ms-grid-column: 1/3;
   }
 }

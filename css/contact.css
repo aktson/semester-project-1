@@ -12,6 +12,7 @@
   font-family: "mulish", Georgia, "Times New Roman", Times, serif;
   border-radius: 8px;
   align-content: center;
+  -ms-grid-row-align: center;
   background-color: var(--gray);
 }
 main label {
@@ -42,10 +43,12 @@ main label {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: repeat(2, 1fr);
   gap: 10px;
 }
 .input:nth-of-type(1) {
   grid-row: 2;
+  -ms-grid-row: 2;
 }
 .input-half label {
   padding: 0;
