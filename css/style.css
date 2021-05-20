@@ -288,9 +288,8 @@ nav ul {
   max-width: 1000px;
 }
 .icons {
-  font-size: 2em;
-  letter-spacing: 0.5em;
-  line-height: 1.5em;
+  font-size: 1.8em;
+  padding: 5px;
 }
 footer {
   background-color: var(--darkblue);
