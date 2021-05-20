@@ -7,7 +7,7 @@
 
 .explore-kids {
   background-color: var(--darkblue);
-  color: white;
+  color: var(--p-light);
 }
 .explore-kids-content {
   max-width: 500px;

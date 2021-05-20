@@ -22,7 +22,7 @@
 }
 
 .cosmology {
-  background-color: var(--gray);
+  background-color: var(--bg);
   padding: 20px;
 }
 
@@ -31,9 +31,5 @@
 }
 .robotics,
 .ecology {
-  background-color: var(--darkblue);
-}
-.ecology p,
-.robotics p {
-  color: white;
+  background-color: var(--bg);
 }

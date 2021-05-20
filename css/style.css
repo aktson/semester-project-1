@@ -3,10 +3,10 @@
 /*color pallete */
 :root {
   --darkblue: #2b3d48;
-  --blue: #364c59;
+  --bg: #e8f7ff;
   --h1-cta-blue: #05e1e1;
-  --light-blue: #007f99;
-  --gray: #f2f2f2;
+  --h2-light-blue: #007f99;
+  --p-light: white;
 }
 /*fonts */
 @font-face {
@@ -68,16 +68,16 @@ h1 {
 }
 
 h2 {
-  color: var(--light-blue);
+  color: var(--h2-light-blue);
   text-align: left;
   padding: 0 10px 10px;
-  border-bottom: 2px solid var(--light-blue);
+  border-bottom: 2px solid var(--h2-light-blue);
   font-size: 1.8em;
 }
 h3 {
   font-size: 1.3em;
   text-decoration: underline;
-  color: var(--blue);
+  color: var(--darkblue);
 }
 p {
   font-size: 1.1em;
@@ -147,7 +147,7 @@ nav ul {
   }
 }
 .hamburger {
-  background-color: white;
+  background-color: var(--p-light);
   position: absolute;
   right: 20px;
   top: 20px;
@@ -209,7 +209,7 @@ nav ul {
 .banner p {
   font-size: 1.2em;
   line-height: 1.4em;
-  color: white;
+  color: var(--p-light);
   padding: 10px 0;
 }
 
@@ -293,7 +293,7 @@ nav ul {
 }
 footer {
   background-color: var(--darkblue);
-  color: white;
+  color: var(--p-light);
   padding: 20px;
   justify-content: center;
   -ms-grid-column-align: center;

@@ -20,7 +20,7 @@
 
 .other-info > div,
 .timing-info > div {
-  background-color: var(--gray);
+  background-color: var(--bg);
   padding: 20px;
   align-items: normal;
   -ms-grid-row-align: normal;
@@ -33,5 +33,5 @@
 
 main .fas {
   font-size: 2em;
-  color: var(--light-blue);
+  color: var(--h2-light-blue);
 }
