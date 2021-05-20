@@ -69,6 +69,11 @@
   .get-involve img {
     max-width: 60%;
   }
+  /*explore page */
+  .explore-teacher figure,
+  .explore-researchers figure {
+    grid-row: 2;
+  }
 
   /*exhibition-spaces  page */
   .bio-medicine,
@@ -94,10 +99,6 @@
   /*events & exhibition spaces page */
   .event-content {
     margin: 80px auto;
-  }
-  .night-museum {
-    grid-row: 1;
-    -ms-grid-row: 1;
   }
 
   /*contact page */
@@ -188,10 +189,6 @@
     margin: 50px auto;
     grid-template-columns: auto;
     -ms-grid-columns: auto;
-  }
-  .night-museum {
-    grid-row: 1;
-    -ms-grid-row: 2;
   }
 
   /*visit us page */
