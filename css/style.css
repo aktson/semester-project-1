@@ -7,6 +7,7 @@
   --h1-cta-blue: #05e1e1;
   --h2-light-blue: #007f99;
   --p-light: white;
+  --bg-body: #f0fdfd;
 }
 /*fonts */
 @font-face {
@@ -42,6 +43,7 @@ body {
     "main"
     "footer";
   overflow-x: hidden;
+  background-color: var(--bg-body);
 }
 
 header {
@@ -103,10 +105,10 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  margin-bottom: 2px;
   transform: translateY(-50px);
   transition: 1s linear;
-  animation: 2s forwards easing;
+  animation: 1s forwards easing;
+  background-color: var(--darkblue);
 }
 @keyframes easing {
   0% {
@@ -124,8 +126,13 @@ header {
 nav li {
   display: inline-block;
   padding: 10px 15px;
+}
+nav li a {
+  color: var(--p-light);
+  font-weight: normal;
   font-size: 1.1em;
 }
+
 nav ul {
   display: flex;
   align-items: center;
@@ -135,7 +142,7 @@ nav ul {
 }
 #hamburger-menu:checked ~ nav {
   display: none;
-  animation: 2s forwards easing-in;
+  animation: 1s forwards easing-in;
   transition: 1s linear;
 }
 @keyframes easing-in {
@@ -161,7 +168,7 @@ nav ul {
   content: "";
   width: 90%;
   background-color: var(--h1-cta-blue);
-  padding: 6px;
+  padding: 5px;
   position: absolute;
   left: 0px;
   top: 22px;
@@ -171,12 +178,11 @@ nav ul {
   transform-origin: right;
 }
 .navbar:hover::before {
-  animation: 2s forwards grow;
   transform: scalex(1);
   transform-origin: left;
 }
 .active {
-  border-bottom: 13px solid var(--h1-cta-blue);
+  border-bottom: 10px solid var(--h1-cta-blue);
   cursor: default;
 }
 
@@ -248,6 +254,7 @@ nav ul {
 .cta:hover {
   transform: scalex(1.1) translateY(5px);
   transition: transform 1s;
+  transform-origin: center;
 }
 /* global parallax section */
 .parallax {
@@ -311,4 +318,7 @@ footer {
 }
 .to-top:hover {
   transform: scale(1.1);
+}
+.copy-right {
+  font-size: 0.8em;
 }
