@@ -14,6 +14,7 @@
   align-content: center;
   -ms-grid-row-align: center;
   background-color: var(--bg);
+  border: 1px solid black;
 }
 main label {
   display: inline-block;

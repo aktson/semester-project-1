@@ -103,17 +103,17 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  transform: translateY(-50px);
+  opacity: 0;
   transition: 1s linear;
   animation: 1s forwards easing;
   background-color: var(--darkblue);
 }
 @keyframes easing {
   0% {
-    transform: translateY(-50px);
+    opacity: 0;
   }
   100% {
-    transform: translateY(0px);
+    opacity: 1;
   }
 }
 
