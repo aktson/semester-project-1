@@ -42,7 +42,6 @@ body {
     "main"
     "footer";
   overflow-x: hidden;
-  background-color: var(--bg);
 }
 
 header {
