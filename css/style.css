@@ -3,11 +3,10 @@
 /*color pallete */
 :root {
   --darkblue: #2b3d48;
-  --bg: #e8f7ff;
+  --bg: #f0fdfd;
   --h1-cta-blue: #05e1e1;
   --h2-light-blue: #007f99;
   --p-light: white;
-  --bg-body: #f0fdfd;
 }
 /*fonts */
 @font-face {
@@ -43,7 +42,7 @@ body {
     "main"
     "footer";
   overflow-x: hidden;
-  background-color: var(--bg-body);
+  background-color: var(--bg);
 }
 
 header {
