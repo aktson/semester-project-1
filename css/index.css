@@ -70,6 +70,7 @@ figcaption {
   display: grid;
   align-content: center;
   justify-content: center;
+  transition: 1s linear;
 }
 .img-overlay:hover {
   opacity: 1;
@@ -92,6 +93,10 @@ figcaption {
 .involve-home img {
   padding: 20px;
   max-width: 40%;
+}
+.involve-home a,
+.news a {
+  transition: 0.5s linear;
 }
 .involve-home a:hover,
 .news a:hover {
