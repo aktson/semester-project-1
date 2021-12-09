@@ -7,6 +7,7 @@
   --h1-cta-blue: #05e1e1;
   --h2-light-blue: #007f99;
   --p-light: white;
+  --box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
 }
 /*fonts */
 @font-face {
@@ -42,6 +43,7 @@ body {
     "main"
     "footer";
   overflow-x: hidden;
+  /* background-color: var(--h2-light-blue); */
 }
 
 header {
@@ -88,7 +90,8 @@ p {
 a,
 p,
 figcaption,
-input {
+input,
+.dropdown {
   font-family: "mulish", Georgia, "Times New Roman", Times, serif;
 }
 
@@ -100,11 +103,10 @@ input {
 header {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   position: relative;
-
-  background-color: var(--darkblue);
+  padding: 16px;
 }
 
 #logo {
@@ -116,9 +118,8 @@ nav li {
   padding: 10px 15px;
 }
 nav li a {
-  color: var(--p-light);
   font-weight: normal;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 nav ul {
@@ -127,11 +128,6 @@ nav ul {
 }
 #hamburger-menu {
   display: none;
-}
-#hamburger-menu:checked ~ nav {
-  display: none;
-  animation: 0.5s forwards easing-in;
-  transition: 1s linear;
 }
 @keyframes easing-in {
   0% {
@@ -143,10 +139,13 @@ nav ul {
 }
 .hamburger {
   background-color: var(--p-light);
+  font-size: 1.5em;
   position: absolute;
   right: 20px;
   top: 20px;
   display: none;
+  padding: 10px;
+  color: var(--darkblue);
 }
 .navbar {
   position: relative;
@@ -156,7 +155,7 @@ nav ul {
   content: "";
   width: 90%;
   background-color: var(--h1-cta-blue);
-  padding: 3px;
+  padding: 2px;
   position: absolute;
   left: 0px;
   top: 22px;
@@ -170,8 +169,29 @@ nav ul {
   transform-origin: left;
 }
 .active {
-  border-bottom: 6px solid var(--h1-cta-blue);
+  border-bottom: 3px solid var(--h1-cta-blue);
   cursor: default;
+  pointer-events: none;
+}
+
+/* dropdown menu */
+.dropdown {
+  position: relative;
+  font-weight: normal;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.dropdown-content {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 50px;
+  background-color: white;
+  justify-content: left;
+  font-size: 0.8em;
+  padding: 4px;
+  display: none;
+  z-index: 10;
 }
 
 /*global banner */
@@ -180,7 +200,7 @@ nav ul {
   flex-direction: column;
   flex-wrap: wrap;
   padding: 50px;
-  height: 80vh;
+  height: 60vh;
 }
 .banner-content {
   max-width: 500px;
@@ -230,7 +250,7 @@ nav ul {
 /*global call to action */
 .cta {
   background-color: var(--h1-cta-blue);
-  padding: 12px 4px;
+  padding: 12px;
   border: none;
   width: 110px;
   display: inline-block;
@@ -248,9 +268,11 @@ nav ul {
 /* global parallax section */
 .parallax {
   background: url("../images/parallax.jpg") center no-repeat;
-  min-height: 50vh;
+  min-height: 40vh;
   background-size: cover;
   background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: overlay;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -258,25 +280,20 @@ nav ul {
   justify-content: center;
   -ms-grid-column-align: center;
 }
-.parallax p {
-  padding: 10px;
-  font-size: 1.5em;
-  color: var(--h1-cta-blue);
-  font-weight: bold;
-  background-color: var(--darkblue);
-  margin: 20px;
-  border-radius: 4px;
-}
-.parallax input {
-  border: none;
-  padding: 20px;
+form input {
   width: 100%;
+  padding: 20px;
   text-align: center;
 }
-.parallax .cta {
+form .cta {
   width: 100%;
-  font-size: 1.2em;
-  margin-left: 0px;
+  margin-left: 0;
+}
+.parallax h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: var(--h1-cta-blue);
+  text-decoration: none;
 }
 
 /* global footer */
@@ -304,6 +321,7 @@ footer {
   right: 20px;
   color: var(--h1-cta-blue);
   transition: transform 0.5s;
+  cursor: pointer;
 }
 .to-top:hover {
   transform: scale(1.1);

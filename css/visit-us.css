@@ -20,11 +20,10 @@
 
 .other-info > div,
 .timing-info > div {
-  background-color: var(--bg);
   padding: 20px;
   align-items: normal;
   -ms-grid-row-align: normal;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--box-shadow);
 }
 
 .other-info {

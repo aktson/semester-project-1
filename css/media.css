@@ -5,9 +5,7 @@
     display: none;
     margin: 0 auto;
   }
-  #hamburger-menu:checked ~ nav {
-    display: flex;
-  }
+
   .hamburger {
     display: block;
   }

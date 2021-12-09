@@ -31,6 +31,5 @@
 }
 .robotics,
 .ecology {
-  background-color: var(--bg);
-  box-shadow: 2px 2px 2px black;
+  box-shadow: var(--box-shadow);
 }

@@ -23,24 +23,25 @@
   <body>
     <header>
       <a href="index.html"><img src="images/logo1.png" alt="logo of Community science Museum" id="logo" /></a>
-      <label for="hamburger-menu" id="checkbox" class="hamburger">
+      <div class="hamburger">
         <i class="fas fa-bars"></i>
-      </label>
-      <input type="checkbox" name="checkbox" id="hamburger-menu" />
-
+      </div>
       <nav>
         <ul>
           <li><a href="index.html" class="navbar">Home</a></li>
-          <li>
-            <a href="get-involved.html" class="navbar active">get involved</a>
+          <li><a href="get-involved.html" class="navbar active">get involved</a></li>
+          <li class="dropdown">
+            explore
+            <i class="fas fa-chevron-down"></i>
+            <ul class="dropdown-content">
+              <li><a href="events-&-exhibition.html" class="navbar">events</a></li>
+              <li>
+                <a href="exhibition-spaces.html" class="navbar">exhibition-spaces</a>
+              </li>
+              <li><a href="explore.html" class="navbar">explore</a></li>
+            </ul>
           </li>
-          <li>
-            <a href="explore.html" class="navbar">explore</a>
-          </li>
-          <li><a href="events-&-exhibition.html" class="navbar">events</a></li>
-          <li>
-            <a href="exhibition-spaces.html" class="navbar">exhibition spaces</a>
-          </li>
+
           <li><a href="visit.html" class="navbar">visit us</a></li>
         </ul>
       </nav>
@@ -94,7 +95,7 @@
         </div>
       </section>
       <section class="parallax">
-        <p>Stay updated</p>
+        <h3>Stay updated</h3>
         <form action="subscribe.php">
           <input type="email" placeholder=" e-mail address" required />
           <input type="submit" class="cta" value="Subscribe" />
@@ -114,10 +115,11 @@
         </div>
         <p class="copy-right">&copy; NoPra 2021 designed & developed by ANKSON</p>
       </div>
-      <a href="#" class="to-top">
+      <div class="to-top">
         <i class="fas fa-arrow-up"></i>
         top
-      </a>
+      </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
