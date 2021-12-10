@@ -32,13 +32,20 @@ hamburger.addEventListener("click", () => {
 const dropdown = document.querySelector(".dropdown");
 const dropdownContent = document.querySelector(".dropdown-content");
 
+const deviceWidth = window.matchMedia("(max-width:636px)");
+
 dropdown.addEventListener("mouseover", () => {
-    dropdownContent.style.display = "block";
+    if (!deviceWidth.matches) {
+        dropdownContent.style.display = "block";
+    }
 })
 dropdownContent.addEventListener("mouseout", () => {
-    dropdownContent.style.display = "none";
+    if (!deviceWidth.matches) {
+        dropdownContent.style.display = "none";
+    }
 })
 
+//click event for mobile device
 dropdown.addEventListener("click", () => {
     if (dropdownContent.style.display === "block") {
         dropdownContent.style.display = "none";
