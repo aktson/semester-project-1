@@ -7,14 +7,13 @@
 
 .form {
   max-width: 500px;
-  margin: 20px auto;
+  margin: 80px auto;
   padding: 40px;
-  font-family: "mulish", Georgia, "Times New Roman", Times, serif;
   border-radius: 8px;
   align-content: center;
   -ms-grid-row-align: center;
   background-color: var(--bg);
-  border: 1px solid black;
+  box-shadow: 3px 3px 24px rgba(0, 0, 0, 0.3);
 }
 main label {
   display: inline-block;
@@ -27,8 +26,10 @@ main label {
   border-radius: 4px;
   padding: 10px;
   border: none;
+  outline: none;
   background-color: var(--p-light);
-  box-shadow: 1px 1px 2px black;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  text-align: left;
 }
 .placeholder {
   width: 100%;
@@ -36,25 +37,22 @@ main label {
   border-radius: 8px;
   border: none;
   background-color: var(--p-light);
-  box-shadow: 1px 1px 2px black;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 .form h2 {
   margin-bottom: 50px;
 }
-.input-half {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(2, 1fr);
-  -ms-grid-columns: repeat(2, 1fr);
-  gap: 10px;
-}
+
 .input:nth-of-type(1) {
   grid-row: 2;
   -ms-grid-row: 2;
 }
-.input-half label {
-  padding: 0;
-}
+
 .form .cta {
   margin-left: 0;
+}
+.success {
+  background-color: rgb(158, 253, 158);
+  text-align: center;
+  margin-bottom: 20px;
 }

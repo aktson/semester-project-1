@@ -28,7 +28,7 @@
       </div>
       <nav>
         <ul>
-          <li><a href="index.html" class="navbar active">Home</a></li>
+          <li><a href="index.html" class="navbar">Home</a></li>
           <li><a href="get-involved.html" class="navbar">get involved</a></li>
           <li class="dropdown">
             explore
@@ -54,25 +54,33 @@
         </div>
       </section>
       <section class="form">
-        <form action="contact.php">
+        <form class="contact-form">
+          <p class="msg-container"></p>
           <h2>Contact us</h2>
-          <div class="input-half">
-            <label for="first-name">First name</label>
-            <input type="text" name="first-name" class="input" required />
-            <label for="last-name">Last name</label>
-            <input type="text" name="last-name" class="input" required />
-          </div>
+
+          <label for="first-name">First name</label>
+          <input type="text" name="first-name" class="input" id="first-name" />
+          <span class="first-name-span"></span>
+
+          <label for="last-name">Last name</label>
+          <input type="text" name="last-name" class="input" id="last-name" />
+          <span class="last-name-span"></span>
+
           <label for="e-mail">E-mail</label>
-          <input name="e-mail" class="input" required />
+          <input name="e-mail" class="input" id="email" />
+          <span class="email-span"></span>
+
           <label for="placeholder">Your message</label>
-          <input type="text" name="placeholder" class="placeholder" />
-          <input type="submit" class="cta" />
+          <input type="text" name="placeholder" class="placeholder" id="message" />
+          <span class="message-span"></span>
+
+          <input type="submit" class="cta" value="Send" />
         </form>
       </section>
-      <section class="parallax">
+      <section class="parallax hidden">
         <h3>Stay updated</h3>
         <form action="subscribe.php">
-          <input type="email" placeholder=" e-mail address" required />
+          <input type="email" placeholder=" e-mail address" />
           <input type="submit" class="cta" value="Subscribe" />
         </form>
       </section>
@@ -96,5 +104,6 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>

@@ -91,14 +91,17 @@ a,
 p,
 figcaption,
 input,
-.dropdown {
+.dropdown,
+form {
   font-family: "mulish", Georgia, "Times New Roman", Times, serif;
 }
 
 * > img {
   width: 100%;
 }
-
+p {
+  line-height: 1.8em;
+}
 /* global header  */
 header {
   display: flex;
@@ -330,4 +333,11 @@ footer {
 }
 .copy-right {
   font-size: 0.8em;
+}
+.hidden {
+  display: none;
+}
+.error {
+  color: red;
+  font-weight: normal;
 }
